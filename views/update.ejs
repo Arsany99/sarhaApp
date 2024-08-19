@@ -1,0 +1,13 @@
+<%- include('header.ejs') %>
+    <div class="container">
+        <form action="/editUser/<%= user._id %>" method="post">
+            <input name="name" type="text" value="<%= user.name %>" placeholder="enter your name" class="form-control"> 
+            <input name="email" type="email" value="<%= user.email %>" placeholder="enter your email" class="form-control"> 
+            <input name="password" type="password" value="<%= user.password %>"placeholder="enter your password" class="form-control">
+            <button class="btn btn-primary">update</button>
+        </form>
+
+    </div>
+
+
+    <%- include('footer.ejs') %>
